@@ -33,3 +33,22 @@ header .logo {
 main {
     padding: 20px;
 }
+
+#list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 50px;
+}
+.teams-container {
+    display: flex;
+    border: solid 2px black;
+    margin: 60px;
+    padding: 35px;
+    background-color: blanchedalmond;
+}
+
+.teams-container img {
+    width: 200px;
+}

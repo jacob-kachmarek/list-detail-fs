@@ -4,8 +4,9 @@ export function renderTeams(team) {
     const nameEl = document.createElement('p');
     const imgEl = document.createElement('img');
 
+    divEl.classList.add('teams-container');
     nameEl.textContent = team.name;
-    imgEl.src = '';
+    imgEl.src = `./assets/${team.id}.png`;
     aEl.href = '';
 
     divEl.append(nameEl, imgEl);
