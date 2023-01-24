@@ -1,4 +1,5 @@
 /* Imports */
+import { getTeams } from './fetch-utils.js';
 
 /* Get DOM Elements */
 const listEl = document.querySelector('main');
