@@ -8,6 +8,11 @@ const listEl = document.querySelector('main');
 let teamArray = [];
 
 /* Events */
+window.addEventListener('load', async () => {
+    const teams = await getTeams();
+    teamArray = teams;
+    console.log(teamArray);
+});
 
 /* Display Functions */
 
