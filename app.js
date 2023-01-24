@@ -1,8 +1,10 @@
 /* Imports */
 
 /* Get DOM Elements */
+const listEl = document.querySelector('main');
 
 /* State */
+let teamArray = [];
 
 /* Events */
 
