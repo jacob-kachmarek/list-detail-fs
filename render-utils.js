@@ -7,7 +7,7 @@ export function renderTeams(team) {
     divEl.classList.add('teams-container');
     nameEl.textContent = team.name;
     imgEl.src = `./assets/${team.id}.png`;
-    aEl.href = '';
+    aEl.href = `./details/?id=${team.id}`;
 
     divEl.append(nameEl, imgEl);
     aEl.append(divEl);
