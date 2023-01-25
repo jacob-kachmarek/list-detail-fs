@@ -7,3 +7,12 @@ export async function getTeams() {
     const { data, error } = await client.from('pac_12_football_teams').select('*');
     return data;
 }
+
+export async function getTeam(id) {
+    const { data, error } = await client
+        .from('pac_12_football_teams')
+        .select(`*, state (name)`)
+        .eq('id', id)
+        .single();
+    return data;
+}
